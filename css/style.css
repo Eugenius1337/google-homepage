@@ -1,0 +1,50 @@
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav-right {
+  float: right;
+}
+
+img {
+  display: block;
+  padding-top: 109px;
+  width: 272px;
+  height: 92px;
+}
+
+.search {
+  width: 100%;
+  position: absolute;
+  left: 25vw;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer li {
+  color: #666;
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  display: inline-block;
+}
+
+.footer-right {
+  float: right;
+}
