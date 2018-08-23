@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
   position: absolute;
   left: 0;
@@ -16,17 +21,30 @@
   float: right;
 }
 
-img {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container img {
   display: block;
   padding-top: 109px;
   width: 272px;
   height: 92px;
+  padding-bottom: 1rem;
 }
 
-.search {
-  width: 100%;
-  position: absolute;
-  left: 25vw;
+.container input {
+  font-size: 2rem;
+  width: 15em;
+  border: 0.2px solid #999;
+}
+
+.container .btn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
 }
 
 .footer {
