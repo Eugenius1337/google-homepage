@@ -16,6 +16,7 @@
 /* Removes underlines from links */
 a {
   text-decoration: none;
+  color: #666;
 }
 
 /* Removes color from visited links */
@@ -30,15 +31,58 @@ a:hover {
 
 /* Styling for nav */
 .nav li {
-  list-style-type: none;
   margin: 1rem;
   padding: 0;
-  display: inline-block;
 }
 
-/* Styling for nav */
-.nav-right {
-  float: right;
+/* Resize notification icon */
+.bell {
+  height: 20px;
+}
+
+/* Resize user icon and round it out */
+.user {
+  margin: -6px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+/* Using Flexbox to style nav and footer items */
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* Ordering navbar items */
+ul li.top:first-child {
+  order: 1;
+}
+
+ul li.top:nth-child(2) {
+  order: 2;
+}
+
+ul li.top:nth-child(3) {
+  order: 4;
+}
+
+ul li.top:nth-child(4) {
+  order: 3;
+  margin-left: auto;
+}
+
+ul li.top:nth-child(5) {
+  order: 5;
+}
+
+ul li.top:nth-child(6) {
+  order: 6;
+}
+
+ul li.top:nth-child(7) {
+  order: 7;
 }
 
 /* Styling for image, search bar, and buttons in one container */
@@ -66,12 +110,22 @@ a:hover {
   padding-top: 20px;
 }
 
-/* Styling for input search bar */
+/* Styling for input search bar and centered with Google logo */
 input {
+  position: relative;
   font-size: 16px;
   padding-left: 10px;
   width: 500px;
   height: 35px;
+  left: 25px;
+}
+
+/* Styling mic icon into input field */
+#img {
+  height: 30px;
+  position: relative;
+  top: 10px;
+  right: 25px;
 }
 
 /* Styling for div containing both buttons */
@@ -94,6 +148,7 @@ button {
   height: 36px;
   line-height: 5px;
   font-size: 13px;
+  border: none;
 }
 
 /* Styling for footer */
@@ -114,7 +169,24 @@ button {
   display: inline-block;
 }
 
-/* Styling for footer items on the right */
-.footer-right {
-  float: right;
+/* Ordering footer items */
+ul li.bottom:first-child {
+  order: 1;
+}
+
+ul li.bottom:nth-child(2) {
+  order: 2;
+}
+
+ul li.bottom:nth-child(3) {
+  order: 3;
+  margin-left: auto;
+}
+
+ul li.bottom:nth-child(4) {
+  order: 4;
+}
+
+ul li.bottom:nth-child(5) {
+  order: 5;
 }
