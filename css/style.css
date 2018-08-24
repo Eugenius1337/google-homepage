@@ -1,8 +1,10 @@
+/* Reset for all elements */
 * {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
-
+/* Styling for nav */
 .nav {
   position: absolute;
   left: 0;
@@ -10,6 +12,13 @@
   top: 0;
 }
 
+/* Styling for nav */
+/* Removes underlines from navbar links */
+.nav a {
+  text-decoration: none;
+}
+
+/* Styling for nav */
 .nav li {
   list-style-type: none;
   margin: 1rem;
@@ -17,36 +26,54 @@
   display: inline-block;
 }
 
+/* Styling for nav */
 .nav-right {
   float: right;
 }
 
+/* Styling for image, search bar, and buttons in one container */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container img {
+/* Styling for image div */
+.img {
+  padding-top: 105px;
+  margin-top: 89px;
+}
+
+/* Styling for image itself */
+.img img {
   display: block;
-  padding-top: 109px;
   width: 272px;
   height: 92px;
-  padding-bottom: 1rem;
 }
 
-.container input {
-  font-size: 2rem;
-  width: 15em;
-  border: 0.2px solid #999;
+/* Styling for div containing both buttons */
+.buttons {
+  padding-top: 18px;
+  text-align: center;
+  width: 571px;
+  height: 58px;
 }
 
-.container .btn {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
+/* Styling for individual buttons */
+button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  color: #757575;
+  height: 36px;
+  line-height: 5px;
+  font-size: 13px;
 }
 
+/* Styling for footer */
 .footer {
   background-color: #f2f2f2;
   position: absolute;
@@ -55,6 +82,7 @@
   bottom: 0;
 }
 
+/* Styling for footer items */
 .footer li {
   color: #666;
   list-style-type: none;
@@ -63,6 +91,7 @@
   display: inline-block;
 }
 
+/* Styling for footer items on the right */
 .footer-right {
   float: right;
 }
