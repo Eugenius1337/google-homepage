@@ -1,6 +1,7 @@
 /* Reset for all elements */
 * {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +13,19 @@
   top: 0;
 }
 
-/* Styling for nav */
-/* Removes underlines from navbar links */
-.nav a {
+/* Removes underlines from links */
+a {
   text-decoration: none;
+}
+
+/* Removes color from visited links */
+a:visited {
+  color: #666;
+}
+
+/* Adds underline to links on hover */
+a:hover {
+  text-decoration: underline;
 }
 
 /* Styling for nav */
@@ -51,9 +61,22 @@
   height: 92px;
 }
 
+/* Styling for div containing input search bar */
+.search {
+  padding-top: 20px;
+}
+
+/* Styling for input search bar */
+input {
+  font-size: 16px;
+  padding-left: 10px;
+  width: 500px;
+  height: 35px;
+}
+
 /* Styling for div containing both buttons */
 .buttons {
-  padding-top: 18px;
+  padding-top: 28px;
   text-align: center;
   width: 571px;
   height: 58px;
